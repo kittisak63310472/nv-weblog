@@ -27,4 +27,10 @@ sequelize.sync({force: false}).then(() => {
     console.log('Server running on ' + port)
  })
 })
+sequelize.sync({force: false}).then(() => {
+    app.listen(port, function () {
+    console.log('Server running on ' + port)
+ })
+})
+
 
